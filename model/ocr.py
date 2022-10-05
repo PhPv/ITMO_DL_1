@@ -9,7 +9,7 @@ import easyocr
 ROOT_DIR = os.path.abspath(os.curdir)
 print(ROOT_DIR)
 
-
+# TODO: обернуть в класс Model, OCR будет на вход получать Frame.number, а зполнять frame.recognise_number
 def show_image(image_path):
     image = mpimg.imread(image_path)
     plt.imshow(image, cmap="gray")
