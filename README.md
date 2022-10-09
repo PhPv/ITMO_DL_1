@@ -54,6 +54,6 @@ teammate
 1) https://github.com/PhPv/ITMO_DL_1/blob/detection_recognition/model/ocr.py
 Содержит методы распознания номера на базе easyocr c дефолтными настройками для кириллических символов
 2) https://github.com/PhPv/ITMO_DL_1/blob/detection_recognition/model/ocr_model.py
-Обернутая в класс инференс модели easyocr c постпроцессингом. Возвращает строку с распознанным номером.
+Обернутый в класс инференс модели easyocr c постпроцессингом. Возвращает строку с распознанным номером.
 3) https://github.com/PhPv/ITMO_DL_1/blob/detection_recognition/model/ocr_research.py
 Скрипт исследования точности easyocr на российских номерах.
