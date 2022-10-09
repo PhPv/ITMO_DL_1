@@ -57,3 +57,6 @@ teammate
 Обернутый в класс инференс модели easyocr c постпроцессингом. Возвращает строку с распознанным номером.
 3) https://github.com/PhPv/ITMO_DL_1/blob/detection_recognition/model/ocr_research.py
 Скрипт исследования точности easyocr на российских номерах.
+
+Также было испробованы best practice в виде проекта https://github.com/ria-com/nomeroff-net
+Проект заточен на полный pipeline распознания от фото машины до номера.
