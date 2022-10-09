@@ -2,10 +2,7 @@ import os
 import glob
 import re
 import sys
-from tqdm import tqdm
-
 import pandas as pd
-from sklearn.metrics import accuracy_score
 
 current_dir=os.getcwd()
 sys.path.append(current_dir)
