@@ -53,8 +53,7 @@ class Model(object):
 
         return recognize_list[0]
 
-obj = Model(image_path)
-obj.recognize(image_path)
+
 
 
 
