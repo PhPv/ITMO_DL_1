@@ -10,10 +10,11 @@
 Из каких блоков состоит решение:
 
 | Модуль          | Готовые решения                    | Описание модуля | 
-| ----------------|:-----------------------------------|: ----------------| 
-| Object Detection| Yolo                               | Распознавание автомобиля + распознавание самого номера | 
-| Распознавание номера| EasyOCR(ResNet+LSTM+CTC        | Распознавание номера с изображения
-| ReID/classification  | torchreid, mobilenet и друзья | Распознавание спецтехники + мэтчинг в условиях плохой видимости номера | 
+
+| Object Detection | Yolo                               | Распознавание автомобиля + распознавание самого номера |
+| OCR |  EasyOCR(ResNet+LSTM+CTC        | Распознавание номера с изображения |
+| ReID/classification  | torchreid, mobilenet и друзья | Распознавание спецтехники + мэтчинг в условиях плохой видимости номера |
+
 
 
 Pipeline обработки:
@@ -32,8 +33,19 @@ https://nomeroff.net.ua/datasets/autoriaNumberplateOcrRu
 
 #### План работы:
 
-|  teammate         | 
-| ----------------|:-----------------------------------|: ----------------|
-| [alexandraroots](https://github.com/alexandraroots)| <ul><li> Обоснование выбора модели (object detcetion) </li><li>Обернуть модель в модуль </li> | <li> Дообучение модели (object detcetion) </li><li> Обернуть в пайплайн </li>
-| [PhPv](https://github.com/PhPv)   |  <ul><li> Сбор данных </li>      |
-| [Nikolai Pavlychev](https://github.com/NikolayPavlychev)  | <ul><li> Выбор модели распознавания номера </li> <li>Обернуть модель в модуль </li> | 
+teammate
+
+[alexandraroots](https://github.com/alexandraroots) :
+1. Обоснование выбора модели (object detcetion).
+2. Обернуть модель в модуль 
+3. Дообучение модели (object detcetion) 
+4. Обернуть в пайплайн 
+
+[PhPv](https://github.com/PhPv) :
+1. Сбор данных
+2. Проверка p2p
+
+[Nikolai Pavlychev](https://github.com/NikolayPavlychev)  :
+1. Выбор модели распознавания номера 
+2. Обернуть модель в модуль 
+
