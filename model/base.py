@@ -1,9 +1,8 @@
-
-
 class Frame:
     """
     Основной объект кадра. Плагины, в которые обернуты модели работают именно с этим объектом
     """
+
     def __init__(self, img):
         """
         :param img: изображение кадра
@@ -12,11 +11,11 @@ class Frame:
         # координаты bound-box автомобиля на текущем кадре
         self.car = []
         # координаты bound-box номера автомобился на кадре
-        self.number = []
+        self.license = []
         # итоговый распознанный номер автомобился
-        self.recognition_number = ''
+        self.recognition_license = ""
         #  тип атвомобился: auto – легковой, special – спецтехника
-        self.status = 'auto'
+        self.status = "auto"
 
 
 class Model:

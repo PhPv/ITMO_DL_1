@@ -18,26 +18,26 @@ def show_image(image_path):
 
 def detection_recognize(image_path):
 
-    reader = easyocr.Reader(["ru"],gpu=True)
+    reader = easyocr.Reader(["ru"], gpu=True)
     result = reader.readtext(image_path, detail=0)
     result = result[0].upper()
     result_rec = []
 
     for i, character in enumerate(result):
         try:
-            ch = re.match(u"[А-Яа-яA-Za-z]",character)[0]
-            if ch=='О':
-                ch='0'
-            if int(i)<=5:
+            ch = re.match(u"[А-Яа-яA-Za-z]", character)[0]
+            if ch == "О":
+                ch = "0"
+            if int(i) <= 5:
                 result_rec.append(ch)
         except TypeError:
             try:
-                ch = re.match(r"\d",character)[0]
+                ch = re.match(r"\d", character)[0]
                 result_rec.append(ch)
             except TypeError:
                 continue
-    
-    return ''.join(result_rec)
+
+    return "".join(result_rec)
 
 
 if __name__ == "__main__":
@@ -45,6 +45,3 @@ if __name__ == "__main__":
     show_image(image_path)
     plt.show()
     print(detection_recognize(image_path))
-
-
-
