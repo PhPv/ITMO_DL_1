@@ -47,8 +47,4 @@ if __name__ == "__main__":
     print(detection_recognize(image_path))
 
 
-# python3 ocr.py /home/nikolaypavlychev/ITMO_DL_1/car_tracking/ITMO_DL_1/autoriaNumberplateOcrRu/test/img/A001BP54.png
-# /home/nikolaypavlychev/ITMO_DL_1/car_tracking/ITMO_DL_1/itmo_dl_env/bin/python -m  ./model/ocr.py /home/nikolaypavlychev/ITMO_DL_1/car_tracking/ITMO_DL_1/autoriaNumberplateOcrRu/test/img/A001PC71.png
-# image_path = '/home/pavlychev/ITMO_DL_1/car_tracking/ITMO_DL_1/autoriaNumberplateOcrRu/test/img/A001PC71.png'
-# print(detection_recognize(image_path))
 
