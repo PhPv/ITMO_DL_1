@@ -92,5 +92,5 @@ teammate
 2. Проверка p2p
 
 [Nikolai Pavlychev](https://github.com/NikolayPavlychev)  :
-1. Выбор модели распознавания номера 
+1. Выбор модели распознавания номера(OCR)
 2. Обернуть модель в модуль 
