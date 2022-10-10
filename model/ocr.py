@@ -16,10 +16,10 @@ def show_image(image_path):
     plt.imshow(image, cmap="gray")
 
 
-def detection_recognize(image_path):
+def detection_recognize(image):
 
     reader = easyocr.Reader(["ru"], gpu=True)
-    result = reader.readtext(image_path, detail=0)
+    result = reader.readtext(image, detail=0)
     result = result[0].upper()
     result_rec = []
 
