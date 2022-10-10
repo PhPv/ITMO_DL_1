@@ -22,8 +22,8 @@ python video_reader.py <path_to_video>
 | Модуль          | Готовые решения                    | Описание модуля | Метрика
 | ------------- |------------------| -----|---|
 | Object Detection | Yolo/Fast R-CNN/SSD                               | Распознавание автомобиля + распознавание самого номера |mAP
-| OCR |  EasyOCR(ResNet+LSTM+CTC)        | Распознавание номера с изображения ||
-| ReID/classification  | torchreid, mobilenet и друзья | Распознавание спецтехники + мэтчинг в условиях плохой видимости номера |Accuracy|
+| OCR |  EasyOCR(ResNet+LSTM+CTC)        | Распознавание номера с изображения |Accuracy|
+| ReID/classification  | torchreid, mobilenet и друзья | Распознавание спецтехники + мэтчинг в условиях плохой видимости номера ||
 
 ### Итоговая метрика:
 В качестве итоговой метрики берется Accuracy
