@@ -9,7 +9,7 @@
 Установка заивисмостей
 ```
 pip install -r requirements.txt
-# yolov5 ставится вручную, но нужна только для дообучения, см. [здесь](https://github.com/ultralytics/yolov5)
+# yolov5 ставится вручную, но нужна только для дообучения, см. https://github.com/ultralytics/yolov5
 ```
 Запуск на видео:
 ```
