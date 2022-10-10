@@ -11,7 +11,7 @@
 pip install -r requirements.txt
 # yolov5 ставится вручную, но нужна только для дообучения, см. https://github.com/ultralytics/yolov5
 ```
-Запуск на видео:
+Запуск на видео (не до конца отдебажено, может поломаться пока, но архитектурно верно):
 ```
 python video_reader.py <path_to_video>
 ```
