@@ -20,10 +20,6 @@ class Detection(Model):
         frame.car = ...
         frame.licence = list(map(int, results.xyxy[0][0][:4]))
 
-        # cv2.rectangle(frame.img, (x1, y1), (x2, y2), (255, 0, 0), -1)
-        # # cv2.rectangle(image, (100, 150), (500, 600), (0, 255, 0), -1)
-        # cv2.imwrite('data/test.png', frame.img)
-
 
 if __name__ == "__main__":
     yolo = Detection()

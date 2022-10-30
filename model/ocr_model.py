@@ -46,23 +46,4 @@ class OCR(Model):
                 recognize_post.append(ch)
             recognize_post_str = "".join(recognize_post)
 
-        # recognize_list.append(recognize_post_str)
-
         frame.recognition_license = recognize_post_str
-
-    # def recognize(self,image_path):
-    #     recognize_list = []
-    #     recognize = detection_recognize(image_path)
-    #     recognize_post = []
-    #     for i, ch in enumerate(recognize):
-    #         if (ch=='О')&(i in [1,2,3]):
-    #             recognize_post.append('0')
-    #         if (ch=='0')&(i in [0]):
-    #             recognize_post.append('О')
-    #         else:
-    #             recognize_post.append(ch)
-    #         recognize_post_str = ''.join(recognize_post)
-    #
-    #     recognize_list.append(recognize_post_str)
-    #
-    #     return recognize_list[0]
