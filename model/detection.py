@@ -10,7 +10,7 @@ class Detection(Model):
 
     def __init__(self):
         self.model = torch.hub.load(
-            "ultralytics/yolov5", "custom", path="data/models/best.pt"
+            "ultralytics/yolov5", "custom", path="data/models/best_model.pt"
         )
         self.model.conf = 0.05
         self.model.iou = 0.9
