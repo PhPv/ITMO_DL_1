@@ -1,7 +1,9 @@
-import cv2
 import sys
-from model.pipeline import Pipeline
+
+import cv2
+
 from model.base import Frame
+from model.pipeline import Pipeline
 
 
 def video_process(video_path: str):

@@ -1,19 +1,18 @@
-import os
 import glob
+import importlib
+import os
 import re
 import sys
-from tqdm import tqdm
 
 import pandas as pd
 from sklearn.metrics import accuracy_score
-
-current_dir = os.getcwd()
-sys.path.append(current_dir)
+from tqdm import tqdm
 
 from model import ocr
 from model.ocr import detection_recognize
-import importlib
 
+current_dir = os.getcwd()
+sys.path.append(current_dir)
 importlib.reload(ocr)
 
 

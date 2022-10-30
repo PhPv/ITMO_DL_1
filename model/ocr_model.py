@@ -1,10 +1,10 @@
+import importlib
 import os
 import sys
 
 from model import ocr
+from model.base import Frame, Model
 from model.ocr import detection_recognize
-import importlib
-from model.base import Model, Frame
 
 current_dir = os.getcwd()
 sys.path.append(current_dir)

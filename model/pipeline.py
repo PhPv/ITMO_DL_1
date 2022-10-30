@@ -1,7 +1,8 @@
+import cv2
+
+from model.base import Frame
 from model.detection import Detection
 from model.ocr_model import OCR
-from model.base import Frame
-import cv2
 
 
 class Pipeline:
@@ -16,4 +17,4 @@ class Pipeline:
     def draw(self, frame):
         x1, y1, x2, y2 = frame.license
         cv2.rectangle(frame.img, (x1, y1), (x2, y2), (255, 0, 0), -1)
-        print('License:', frame.recognition_license)
+        print("License:", frame.recognition_license)
